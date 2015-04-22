@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+<struts>
+ 
+    <constant name="struts.devMode" value="false" />
+    <constant name="struts.action.extension" value=",,"/> 
+    <package name="ws" extends="struts-default" namespace="/ws">
+        <action name="index" >
+            <result name="success">/WEB-INF/index2.jsp</result>
+        </action>
+    </package>
+    <package name="pages" extends="struts-default" namespace="/">      
+        <default-action-ref name="question" />
+        <action name="question" class="edu.ucla.cs.scai.swims.questionanswering.webinterface.action.QuestionAction" >
+            <result name="success" >/WEB-INF/question.jsp</result>
+        </action>
+    </package>
+
+</struts>
