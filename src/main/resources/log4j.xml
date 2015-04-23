@@ -20,7 +20,7 @@
    
    <!-- for all other loggers log only info and above log messages -->
      <root>
-        <priority value="INFO"/> 
+        <priority value="WARNING"/> 
         <appender-ref ref="STDOUT" /> 
      </root> 
      
